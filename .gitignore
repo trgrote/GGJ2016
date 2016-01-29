@@ -17,10 +17,13 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
-
+*.sublime-workspace
 
 # Unity3D generated meta files
 *.pidb.meta
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+
+# OS X Specific Files
+.DS_Store
