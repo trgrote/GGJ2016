@@ -5,6 +5,7 @@ public class PlayerConversation : MonoBehaviour
 {
 	GameObject _currentNPCTarget;
 	UnityStandardAssets._2D.Platformer2DUserControl _controls;
+	ConversationPlayer _convoPlayer;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -29,6 +30,16 @@ public class PlayerConversation : MonoBehaviour
 		}
 	}
 
+	void Start()
+	{
+		// Should only be one
+		_convoPlayer = FindObjectOfType<ConversationPlayer>();
+
+		_convoPlayer._conversationEnd.AddListener( () => OnConversationEnd() );
+
+		_controls = GetComponent<UnityStandardAssets._2D.Platformer2DUserControl>();
+	}
+
 	void Update()
 	{
 		// Wait for player input
@@ -36,6 +47,16 @@ public class PlayerConversation : MonoBehaviour
 		{
 			// Switch to conversation state
 			_controls.enabled = false;
+
+			var topics = _currentNPCTarget.GetComponent<Topics>();
+
+			_convoPlayer.StartConversation( topics._topics );
 		}
+	}
+
+	public void OnConversationEnd()
+	{
+		// We should be the only ones who have a conversation going on
+		_controls.enabled = true;
 	}
 }
