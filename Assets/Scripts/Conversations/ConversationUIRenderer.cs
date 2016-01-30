@@ -22,10 +22,6 @@ public class ConversationUIRenderer : MonoBehaviour
 	{
 		_convoPlayer = GetComponent<ConversationPlayer>();
 
-		_convoPlayer._conversationStart.AddListener( () => OnConversationBegin() );
-		_convoPlayer._conversationEnd.AddListener( () => OnConversationEnd() );
-		_convoPlayer._topicChanged.AddListener( () => OnTopicChange() );
-
 		KillAllButtons();
 		_conversationElements.SetActive(false);
 	}
