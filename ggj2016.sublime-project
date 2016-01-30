@@ -1,0 +1,23 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": "true",
+			"path": ".",
+			"file_exclude_patterns": [
+                "*.meta",
+                "*.csproj",
+                "*.booproj",
+                "*.unityproj",
+                "*sublime-project",
+                "*.unity",
+                "*.png"
+            ],
+            "folder_exclude_patterns": [
+            	"Temp",
+            	"Library"
+            ]
+		}
+	],
+	"solution_file": "./GGJ2016.sln"
+}
