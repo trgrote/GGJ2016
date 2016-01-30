@@ -6,6 +6,7 @@ public class PlayerConversation : MonoBehaviour
 	GameObject _currentNPCTarget;
 	UnityStandardAssets._2D.Platformer2DUserControl _controls;
 	ConversationPlayer _convoPlayer;
+	bool _inConversation = false;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -18,6 +19,14 @@ public class PlayerConversation : MonoBehaviour
 			if ( topics && _currentNPCTarget != other.gameObject )
 			{
 				_currentNPCTarget = other.gameObject;
+
+				// Also, try to find Child named "HoveringText" and if it exists, start it up
+				var hovering_text = _currentNPCTarget.transform.FindChild("HoveringText");
+
+				if ( hovering_text )
+				{
+					hovering_text.gameObject.SetActive(true);
+				}
 			}
 		}
 	}
@@ -26,6 +35,14 @@ public class PlayerConversation : MonoBehaviour
 	{
 		if ( _currentNPCTarget == other.gameObject )
 		{
+			// Also, try to find Child named "HoveringText" and if it exists, start it up
+			var hovering_text = _currentNPCTarget.transform.FindChild("HoveringText");
+
+			if ( hovering_text )
+			{
+				hovering_text.gameObject.SetActive(false);
+			}
+
 			_currentNPCTarget = null;
 		}
 	}
@@ -43,7 +60,7 @@ public class PlayerConversation : MonoBehaviour
 	void Update()
 	{
 		// Wait for player input
-		if ( Input.GetKeyDown( KeyCode.E ) && _currentNPCTarget != null )
+		if ( ! _inConversation && Input.GetKeyDown( KeyCode.E ) && _currentNPCTarget != null )
 		{
 			// Switch to conversation state
 			_controls.enabled = false;
@@ -51,6 +68,16 @@ public class PlayerConversation : MonoBehaviour
 			var topics = _currentNPCTarget.GetComponent<Topics>();
 
 			_convoPlayer.StartConversation( topics._topics );
+
+			// Also, try to find Child named "HoveringText" and if it exists, start it up
+			var hovering_text = _currentNPCTarget.transform.FindChild("HoveringText");
+
+			if ( hovering_text )
+			{
+				hovering_text.gameObject.SetActive(false);
+			}
+
+			_inConversation = true;
 		}
 	}
 
@@ -58,5 +85,6 @@ public class PlayerConversation : MonoBehaviour
 	{
 		// We should be the only ones who have a conversation going on
 		_controls.enabled = true;
+		_inConversation = false;
 	}
 }
