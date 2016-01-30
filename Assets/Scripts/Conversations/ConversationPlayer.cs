@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -43,6 +44,8 @@ public class ConversationPlayer : MonoBehaviour
 			_currentTopicName = TopicName.START,
 			_currentTopic = start
 		};
+
+		OnConversationStart();
 	}
 
 	public string CurrentDialogue
@@ -110,6 +113,8 @@ public class ConversationPlayer : MonoBehaviour
 		// Update State
 		_state._currentTopicName = next_topic_name;
 		_state._currentTopic = next_topic;
+
+		_topicChanged.Invoke();
 	} 
 
 	// Used by the COnversation renderer to build all the 
@@ -120,10 +125,17 @@ public class ConversationPlayer : MonoBehaviour
 			new ConversationOption[0];
 	}
 
-	public event Action ConversationEnd = delegate{};
+	public UnityEvent _conversationStart;
+	public UnityEvent _conversationEnd;
+	public UnityEvent _topicChanged;
+
+	protected void OnConversationStart()
+	{
+		_conversationStart.Invoke();
+	}
 
 	protected void OnConversationEnd()
 	{
-		ConversationEnd();
+		_conversationEnd.Invoke();
 	}
 }

@@ -9,9 +9,12 @@ public class ConversationUnitTest : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		_convoPlayer.ConversationEnd += () => Debug.Log("Conversation Ended");
+		_convoPlayer._conversationEnd.AddListener( () => Debug.Log("Conversation Ended") );
+		_convoPlayer._topicChanged.AddListener( () => Debug.Log("Topic Changed") );
 
 		_convoPlayer.StartConversation( _topics._topics );
+
+		return;
 
 		Debug.Log("NPC: " + _convoPlayer.CurrentDialogue );
 
@@ -30,6 +33,8 @@ public class ConversationUnitTest : MonoBehaviour
 		// _convoPlayer.ChooseOption(TopicName.START);  // Error
 
 		_convoPlayer.ChooseOption( next_option );
+
+		Debug.Log("NPC: " + _convoPlayer.CurrentDialogue );
 
 		next_option = null;
 
