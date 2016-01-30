@@ -16,6 +16,8 @@ GameObject:
   - 114: {fileID: 11445558}
   - 61: {fileID: 6144016}
   - 114: {fileID: 11436310}
+  - 58: {fileID: 5893592}
+  - 114: {fileID: 11422806}
   m_Layer: 0
   m_Name: Pilgrim
   m_TagString: Player
@@ -117,8 +119,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2907, y: -96, z: 0}
-  m_LocalScale: {x: 51.2, y: 51.2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.7715329, y: 1.7715304, z: 1}
   m_Children:
   - {fileID: 458448}
   - {fileID: 483202}
@@ -186,12 +188,26 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 15
+  m_GravityScale: 3
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &5893592
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109308}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.25
 --- !u!58 &5899612
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -237,6 +253,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11422806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395664bf1060442549aad9c0b33d791c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11436310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -273,8 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08f91df3bd212f429df17f53ce2f364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 100
-  m_JumpForce: 6000
+  m_MaxSpeed: 10
+  m_JumpForce: 800
   m_CrouchSpeed: 0.25
   m_AirControl: 1
   m_WhatIsGround:
