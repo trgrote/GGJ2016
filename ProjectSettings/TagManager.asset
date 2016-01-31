@@ -7,6 +7,8 @@ TagManager:
   - PeaceZone
   - DangerZone
   - NPC
+  - Monster
+  - MonsterBoundary
   layers:
   - Default
   - TransparentFX
