@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Glade.unity
   - enabled: 1
     path: Assets/Scenes/Ruins.unity
+  - enabled: 1
+    path: Assets/Scenes/Shrine.unity
