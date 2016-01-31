@@ -2,9 +2,24 @@
 using System.Collections;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class FadeOut : MonoBehaviour 
+public class LightningStrike : MonoBehaviour 
 {
+	[SerializeField] private float _visibleTime = 1.0f;
 	[SerializeField] private float _speed = 2f;
+
+	[SerializeField] private FadeOut _flashFadeOut;
+
+	void Start()
+	{
+		_flashFadeOut.StartFadeOut();
+		StartCoroutine(VisibleCountDown());
+	}
+
+	IEnumerator VisibleCountDown()
+	{
+		yield return new WaitForSeconds( _visibleTime );
+		StartFadeOut();
+	}
 
 	public void StartFadeOut()
 	{

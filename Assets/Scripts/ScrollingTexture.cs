@@ -12,7 +12,7 @@ public class ScrollingTexture : MonoBehaviour
 		render = GetComponent<Renderer>();
 
 		render.sortingLayerName = "Default";
-		render.sortingOrder = 1;
+		render.sortingOrder = 4;
 	}
 
 	// Update is called once per frame
