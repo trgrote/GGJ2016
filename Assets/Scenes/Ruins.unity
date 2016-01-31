@@ -4152,7 +4152,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 508984158}
   m_LocalRotation: {x: 0, y: 0, z: 0.011529885, w: 0.99993354}
-  m_LocalPosition: {x: 36.81, y: -25.29, z: 0}
+  m_LocalPosition: {x: 35.6, y: -25.32, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16104,6 +16104,64 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3443ab40a3dfd754d86e5eb9be74e278, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1930900614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1930900616}
+  - 212: {fileID: 1930900615}
+  m_Layer: 0
+  m_Name: Rocks_01_v2 (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1930900615
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930900614}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0776346438fbfb241aad93381c5057b8, type: 3}
+  m_Color: {r: 0.625, g: 0.4273897, b: 0.4273897, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!4 &1930900616
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930900614}
+  m_LocalRotation: {x: 0, y: 0, z: 0.011529885, w: 0.99993354}
+  m_LocalPosition: {x: 35.6, y: -25.32, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 44
 --- !u!4 &1931638263 stripped
 Transform:
   m_PrefabParentObject: {fileID: 477324, guid: 3443ab40a3dfd754d86e5eb9be74e278, type: 2}
