@@ -52,7 +52,8 @@ public class PlayerConversation : MonoBehaviour
 		// Should only be one
 		_convoPlayer = FindObjectOfType<ConversationPlayer>();
 
-		_convoPlayer._conversationEnd.AddListener( () => OnConversationEnd() );
+		if ( _convoPlayer != null )
+			_convoPlayer._conversationEnd.AddListener( () => OnConversationEnd() );
 
 		_controls = GetComponent<UnityStandardAssets._2D.Platformer2DUserControl>();
 	}
