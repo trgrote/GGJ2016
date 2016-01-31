@@ -22,11 +22,17 @@ public class MonsterBehavior : MonoBehaviour
 		m_Anim.SetBool("Dead", true);
 
 		// stun monster and then turn red, countdown to kill
+		StartCoroutine(DieAfter(1.5f));
+	}
+
+	IEnumerator DieAfter( float time )
+	{
+		yield return new WaitForSeconds( time );
+		Destroy( this.gameObject );
 	}
 
 	public void Stun()
 	{
-
 	}
 
 	private void Awake()
@@ -54,6 +60,16 @@ public class MonsterBehavior : MonoBehaviour
 	    // Read the inputs.
 	    // Pass all parameters to the character control script.
 	    m_Character.Move(_currentDirection, false, false);
+	}
+
+	void OnCollisionEnter2D( Collision2D collision )
+	{
+		// Kill Player
+		if ( collision.collider.CompareTag("Player") )
+		{
+			PlayerDeath player = collision.gameObject.GetComponent<PlayerDeath>();
+			player.Kill();
+		}
 	}
 
 	void OnTriggerEnter2D( Collider2D other )
