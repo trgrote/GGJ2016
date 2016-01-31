@@ -15,7 +15,7 @@ public class PlayerAttack : MonoBehaviour
 
 	const float _flashRadius = 7f;
 
-	[SerializeField] Animator anim;
+	Animator anim;
 
  	[SerializeField] private LayerMask _hitMask;
 
@@ -94,6 +94,13 @@ public class PlayerAttack : MonoBehaviour
 
 		_canAttack = false;
 		StartCoroutine( AttackCoolDown() );
+		StartCoroutine(WaitTIllAttackEnds());
+	}
+
+	IEnumerator WaitTIllAttackEnds()
+	{
+		yield return new WaitForSeconds( 0.5f );
+		anim.SetBool ("Attack", false);
 	}
 
 	void OnDrawGizmos()
