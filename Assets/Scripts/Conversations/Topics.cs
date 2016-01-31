@@ -9,7 +9,9 @@ public enum TopicName
 	START,
 	END,
 
-	TEST1
+	TEST1,
+
+	ACTIVATE_WATER_PUMP
 
 }
 
