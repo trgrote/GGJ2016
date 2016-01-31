@@ -17,6 +17,10 @@ public enum TopicName
 	Deb_B,
 	Deb_C,
 
+	BS_A,
+	BS_B,
+	BS_C,
+
 }
 
 [Serializable]
