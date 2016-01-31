@@ -17,9 +17,26 @@ public enum TopicName
 	Deb_B,
 	Deb_C,
 
+<<<<<<< HEAD
 	BS_A,
 	BS_B,
 	BS_C,
+=======
+	// Goddess of Life
+	GOL_Continue1,
+	GOL_Continue2,
+	GOL_Continue3,
+
+	// Goddess of War and Man
+	GOW_Continue1,
+	GOW_Continue2,
+	GOW_Continue3,
+
+	// Goddess of Balance ( Buddha )
+	GOB_Continue1,
+	GOB_Continue2,
+	GOB_Continue3,
+>>>>>>> 44bb8bc9cbf7462d89a01cc013c600e886b8f1f3
 
 }
 
