@@ -23,6 +23,9 @@ public class MonsterBehavior : MonoBehaviour
 
 		_stunned = true;
 
+		--KarmaValues.Nature;
+		++KarmaValues.Civilzation;
+
 		// stun monster and then turn red, countdown to kill
 		StartCoroutine(DieAfter(1.5f));
 	}
