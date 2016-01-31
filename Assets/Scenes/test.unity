@@ -3058,6 +3058,173 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &831567836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 192060, guid: f5a396c364c49f54baa62db9e5f2d498, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 831567841}
+  - 212: {fileID: 831567840}
+  - 95: {fileID: 831567839}
+  - 61: {fileID: 831567838}
+  - 114: {fileID: 831567837}
+  m_Layer: 0
+  m_Name: Girl01 (1)
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &831567837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831567836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83757337eeab42828f5d71aead37dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _topics:
+  - _topicName: 0
+    _dialogue: Hello Guv'na
+    _options:
+    - _option: Good Bye
+      _nextTopic: 1
+      _optionChosen:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1018135988}
+            m_MethodName: SaidGoodBye
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+    - _option: Hello Right Back at ya
+      _nextTopic: 2
+      _optionChosen:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1018135988}
+            m_MethodName: NotGoodbye
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+  - _topicName: 2
+    _dialogue: Oh that's nice of you to say
+    _options:
+    - _option: Get OUT OF HERE!
+      _nextTopic: 1
+      _optionChosen:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1018135988}
+            m_MethodName: SaidGoodBye
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+--- !u!61 &831567838
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831567836}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.07472539}
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1.5755497}
+--- !u!95 &831567839
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9592060, guid: f5a396c364c49f54baa62db9e5f2d498,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831567836}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc60f3a8dfb1d0e4784bf460ee1d15ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &831567840
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21292060, guid: f5a396c364c49f54baa62db9e5f2d498,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831567836}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: aa1392070ca93454e9ec2e9bcb4bb88a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!4 &831567841
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 492060, guid: f5a396c364c49f54baa62db9e5f2d498, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831567836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.64, y: -3.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2105638868}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &835734606
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,6 +3648,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &944549364
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 831567841}
+    m_Modifications:
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &957524542
 Prefab:
@@ -4296,6 +4505,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07fc6b0f5067c2642afd84996b1e3f86, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1160990505
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 484158, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 484158, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 484158, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484158, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484158, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484158, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484158, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 484158, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d99a17bc6b46a4452bee6281592b51bf, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1173620496 stripped
 Transform:
@@ -5518,7 +5769,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &1492817828
 GameObject:
   m_ObjectHideFlags: 0
@@ -6928,6 +7179,10 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400010, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
   m_PrefabInternal: {fileID: 927038120}
+--- !u!4 &2105638868 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+  m_PrefabInternal: {fileID: 944549364}
 --- !u!1 &2108832599
 GameObject:
   m_ObjectHideFlags: 0
@@ -7090,6 +7345,7 @@ GameObject:
   - 95: {fileID: 2142226564}
   - 61: {fileID: 2142226563}
   - 114: {fileID: 2142226568}
+  - 114: {fileID: 2142226567}
   m_Layer: 0
   m_Name: Girl01
   m_TagString: NPC
@@ -7173,6 +7429,18 @@ Transform:
   - {fileID: 128627026}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &2142226567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142226562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1273947264694104acbc3c3833a2c9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3
 --- !u!114 &2142226568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7213,27 +7481,6 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 1018135988}
             m_MethodName: NotGoodbye
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
-  - _topicName: 2
-    _dialogue: Oh that's nice of you to say
-    _options:
-    - _option: Get OUT OF HERE!
-      _nextTopic: 1
-      _optionChosen:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1018135988}
-            m_MethodName: SaidGoodBye
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
