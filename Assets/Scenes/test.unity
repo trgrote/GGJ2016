@@ -1317,6 +1317,64 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07fc6b0f5067c2642afd84996b1e3f86, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &438733058
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 423204, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 389
+      objectReference: {fileID: 0}
+    - target: {fileID: 423204, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 185.87422
+      objectReference: {fileID: 0}
+    - target: {fileID: 423204, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423204, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423204, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423204, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423204, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 423204, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462686, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: _statueLove
+      value: 
+      objectReference: {fileID: 1087289569}
+    - target: {fileID: 11462686, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: _statueWar
+      value: 
+      objectReference: {fileID: 207420965}
+    - target: {fileID: 11462686, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: _statueBalance
+      value: 
+      objectReference: {fileID: 43500028}
+    - target: {fileID: 11462686, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+      propertyPath: _statueAction
+      value: 
+      objectReference: {fileID: 1286369274}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 181b2353b7b864007bd426cba9a54b0f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &441922126
 Prefab:
   m_ObjectHideFlags: 0
@@ -2729,6 +2787,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &943831566
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 485238, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 485238, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 485238, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485238, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485238, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485238, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485238, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 485238, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 124966, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &957524542
 Prefab:
   m_ObjectHideFlags: 0
@@ -3852,48 +3956,10 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &1277654368
+--- !u!1 &1286369274 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1277654370}
-  - 114: {fileID: 1277654369}
-  m_Layer: 0
-  m_Name: StatueSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1277654369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1277654368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b64e7611a45e479bb989353e34e1018, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _statueLove: {fileID: 1087289569}
-  _statueWar: {fileID: 207420965}
-  _statueBalance: {fileID: 43500028}
---- !u!4 &1277654370
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1277654368}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 389, y: 185.87422, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_PrefabParentObject: {fileID: 124966, guid: 109407b0344a949879a9c72d3e6a8fb8, type: 2}
+  m_PrefabInternal: {fileID: 943831566}
 --- !u!1001 &1302607184
 Prefab:
   m_ObjectHideFlags: 0

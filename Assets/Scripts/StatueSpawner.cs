@@ -7,6 +7,7 @@ public class StatueSpawner : MonoBehaviour
 	[SerializeField] private GameObject _statueLove;
 	[SerializeField] private GameObject _statueWar;
 	[SerializeField] private GameObject _statueBalance;
+	[SerializeField] private GameObject _statueAction;
 
 	// Use this for initialization
 	void Start () 
@@ -66,7 +67,7 @@ public class StatueSpawner : MonoBehaviour
 					_statueWar.SetActive(true);
 					break;
 				case KarmaTypes.Active:
-					_statueWar.SetActive(true);   /// this is the weirdest one
+					_statueAction.SetActive(true);   /// this is the weirdest one
 					break;
 			}
 		}
