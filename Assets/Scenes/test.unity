@@ -1043,7 +1043,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
       propertyPath: m_RootOrder
-      value: 39
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
       propertyPath: m_Name
@@ -2609,7 +2609,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
       propertyPath: m_RootOrder
-      value: 44
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
       propertyPath: m_Name
@@ -2883,7 +2883,7 @@ Transform:
   m_LocalScale: {x: 25.6, y: 25.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1690540724}
-  m_RootOrder: 27
+  m_RootOrder: 29
 --- !u!61 &695308420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3320,7 +3320,7 @@ Transform:
   m_LocalScale: {x: 25.6, y: 25.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1690540724}
-  m_RootOrder: 29
+  m_RootOrder: 31
 --- !u!61 &835734608
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3699,7 +3699,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
       propertyPath: m_RootOrder
-      value: 36
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 674c23718320e9d498cdad2a5bcd576a, type: 2}
       propertyPath: m_Name
@@ -5977,7 +5977,7 @@ Transform:
   m_LocalScale: {x: 25.6, y: 25.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1690540724}
-  m_RootOrder: 34
+  m_RootOrder: 27
 --- !u!61 &1507652961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6619,17 +6619,17 @@ Transform:
   - {fileID: 551950029}
   - {fileID: 1516321550}
   - {fileID: 398061311}
+  - {fileID: 1507652960}
+  - {fileID: 2103419503}
   - {fileID: 695308419}
   - {fileID: 1989429664}
   - {fileID: 835734607}
-  - {fileID: 2103419503}
-  - {fileID: 1385963844}
   - {fileID: 1656404552}
   - {fileID: 2108832600}
-  - {fileID: 1507652960}
-  - {fileID: 921029526}
   - {fileID: 1173620496}
+  - {fileID: 921029526}
   - {fileID: 1384954036}
+  - {fileID: 1385963844}
   - {fileID: 965757371}
   - {fileID: 145586147}
   - {fileID: 1109765753}
@@ -6759,7 +6759,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1001 &1738090494
 Prefab:
   m_ObjectHideFlags: 0
