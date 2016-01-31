@@ -38,8 +38,6 @@ public class WaterDialScript : MonoBehaviour
 		float dist = _highPostion.y - _water.transform.position.y;
 		float detla = dist / _transitionTime;  // units / time = change over time
 
-		Debug.Log(detla);
-
 		float elapsed_time = 0;
 		while ( elapsed_time < _transitionTime )
 		{
@@ -60,8 +58,6 @@ public class WaterDialScript : MonoBehaviour
 	{
 		float dist = _startingPosition.y - _water.transform.position.y;
 		float detla = dist / _transitionTime;  // units / time = change over time
-
-		Debug.Log(detla);
 
 		float elapsed_time = 0;
 		while ( elapsed_time < _transitionTime )

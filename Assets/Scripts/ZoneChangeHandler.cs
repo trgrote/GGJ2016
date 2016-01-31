@@ -10,10 +10,8 @@ public class ZoneChangeHandler : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "PeaceZone") {
 			CameraCenter.position = PeaceCenter.position;
-			Debug.Log ("PeaceZone");
 		} else if (other.tag == "DangerZone") {
 			CameraCenter.position = DangerCenter.position;
-			Debug.Log ("DangerZone");
 		}
 	}
 
