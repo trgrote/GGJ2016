@@ -11,7 +11,11 @@ public enum TopicName
 
 	TEST1,
 
-	ACTIVATE_WATER_PUMP
+	ACTIVATE_WATER_PUMP,
+
+	Deb_A,
+	Deb_B,
+	Deb_C,
 
 }
 
