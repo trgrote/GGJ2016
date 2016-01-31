@@ -6,11 +6,7 @@ public class FadeOut : MonoBehaviour
 {
 	[SerializeField] private float _speed = 2f;
 
-	void Start()
-	{
-		StartFadeOut();
-	}
-	void StartFadeOut()
+	public void StartFadeOut()
 	{
 		SpriteRenderer sprite = GetComponent<SpriteRenderer>();
 		StartCoroutine( FadeOutCoroutine( sprite ) );
@@ -18,6 +14,7 @@ public class FadeOut : MonoBehaviour
 
 	IEnumerator FadeOutCoroutine(SpriteRenderer sprite)
 	{
+		sprite.color = Color.white;
 		Color blank_color = sprite.color;
 		blank_color.a = 0.0f;
 		while ( sprite.color.a > 0.05f )
