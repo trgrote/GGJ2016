@@ -21,6 +21,8 @@ public class MonsterBehavior : MonoBehaviour
 		// kill Monster
 		m_Anim.SetBool("Dead", true);
 
+		_stunned = true;
+
 		// stun monster and then turn red, countdown to kill
 		StartCoroutine(DieAfter(1.5f));
 	}
@@ -59,11 +61,16 @@ public class MonsterBehavior : MonoBehaviour
 	{
 	    // Read the inputs.
 	    // Pass all parameters to the character control script.
-	    m_Character.Move(_currentDirection, false, false);
+	    if ( ! _stunned )
+	    {
+	    	m_Character.Move(_currentDirection, false, false);
+	    }
 	}
 
 	void OnCollisionEnter2D( Collision2D collision )
 	{
+		if ( _stunned ) return;
+		
 		// Kill Player
 		if ( collision.collider.CompareTag("Player") )
 		{
