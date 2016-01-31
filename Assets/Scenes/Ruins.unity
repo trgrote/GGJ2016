@@ -2955,7 +2955,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 472686, guid: 153d89b7499e15b46b890ad70c68f04e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 472686, guid: 153d89b7499e15b46b890ad70c68f04e, type: 2}
       propertyPath: m_LocalScale.x
@@ -2968,6 +2968,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 153d89b7499e15b46b890ad70c68f04e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &87677443 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 472686, guid: 153d89b7499e15b46b890ad70c68f04e, type: 2}
+  m_PrefabInternal: {fileID: 87677442}
 --- !u!4 &87709397 stripped
 Transform:
   m_PrefabParentObject: {fileID: 477324, guid: 3443ab40a3dfd754d86e5eb9be74e278, type: 2}
@@ -44519,6 +44523,48 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 477324, guid: 3443ab40a3dfd754d86e5eb9be74e278, type: 2}
   m_PrefabInternal: {fileID: 1075468394}
+--- !u!1001 &1428440920
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 87677443}
+    m_Modifications:
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 487074, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ed7a8128b25684852bc20cc637bbbf8e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1429832725
 Prefab:
   m_ObjectHideFlags: 0
@@ -56242,6 +56288,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5907304, y: 1.5975847, z: 0.2}
   m_Center: {x: -0.07963467, y: 0.015927076, z: 0}
+--- !u!114 &1716246959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716246957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83757337eeab42828f5d71aead37dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _topics:
+  - _topicName: 0
+    _dialogue: Hello Guv'na
+    _options:
+    - _option: Good Bye
+      _nextTopic: 1
+      _optionChosen:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
 --- !u!4 &1718433660 stripped
 Transform:
   m_PrefabParentObject: {fileID: 477324, guid: 3443ab40a3dfd754d86e5eb9be74e278, type: 2}
