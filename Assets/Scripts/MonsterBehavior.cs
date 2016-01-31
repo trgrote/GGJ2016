@@ -35,6 +35,17 @@ public class MonsterBehavior : MonoBehaviour
 
 	public void Stun()
 	{
+		Debug.Log("Monster Stunned");
+		StopAllCoroutines();
+		_stunned = true;
+		StartCoroutine(StunCountDown());
+	}
+
+	IEnumerator StunCountDown()
+	{
+		_stunned = true;
+		yield return new WaitForSeconds( 1.5f );
+		_stunned = false;
 	}
 
 	private void Awake()
@@ -70,7 +81,7 @@ public class MonsterBehavior : MonoBehaviour
 	void OnCollisionEnter2D( Collision2D collision )
 	{
 		if ( _stunned ) return;
-		
+
 		// Kill Player
 		if ( collision.collider.CompareTag("Player") )
 		{

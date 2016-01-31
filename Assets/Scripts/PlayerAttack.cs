@@ -13,6 +13,8 @@ public class PlayerAttack : MonoBehaviour
 
 	const float _attackDistance = 1.5f;
 
+	const float _flashRadius = 7f;
+
 	[SerializeField] Animator anim;
 
  	[SerializeField] private LayerMask _hitMask;
@@ -29,6 +31,7 @@ public class PlayerAttack : MonoBehaviour
 		if (_canFlash && Input.GetKeyDown (KeyCode.Alpha1)) 
 		{
 			_Flash.StartFadeOut ();
+			Flash();
 			StartCoroutine(FlashCoolDown());
 		}
 
@@ -51,6 +54,22 @@ public class PlayerAttack : MonoBehaviour
 		_canAttack = false;
 		yield return new WaitForSeconds( _attackCountDown );
 		_canAttack = true;
+	}
+
+	void Flash()
+	{
+		var cast = Physics2D.CircleCast( transform.position, _flashRadius, Vector2.zero, 0, _hitMask );
+
+		if ( cast.collider != null && cast.collider.CompareTag("Monster") )
+		{
+			// get monster thing and kill
+			MonsterBehavior mons = cast.collider.GetComponent<MonsterBehavior>();
+
+			if ( mons )
+			{
+				mons.Stun();
+			}
+		}
 	}
 
 	void Attack()
@@ -82,5 +101,9 @@ public class PlayerAttack : MonoBehaviour
 		Vector2 end = (Vector2) transform.position + new Vector2( Mathf.Sign( transform.localScale.x ) * _attackDistance, 0 );
 
 		Gizmos.DrawLine( transform.position, end );
+
+		Gizmos.color = Color.blue;
+
+		Gizmos.DrawWireSphere( transform.position, _flashRadius);
 	}
 }
