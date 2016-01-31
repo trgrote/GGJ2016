@@ -12,11 +12,11 @@ public enum KarmaTypes
 
 public static class KarmaValues
 {
-	public static int Nature;
-	public static int Civilzation;
+	public static int Nature = 1;
+	public static int Civilzation = 1;
 	
-	public static int Good;
-	public static int Evil;
+	public static int Good = 1;
+	public static int Evil = 1;
 
-	public static int Active;
+	public static int Active = 0;
 }
