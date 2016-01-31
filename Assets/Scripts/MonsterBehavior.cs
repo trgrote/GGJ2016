@@ -8,6 +8,7 @@ public class MonsterBehavior : MonoBehaviour
 {
 	private PlatformerCharacter2D m_Character;
 	private bool m_Jump;
+	private Animator m_Anim;            // Reference to the player's animator component.
 
 	private bool _stunned = false;
 
@@ -18,6 +19,9 @@ public class MonsterBehavior : MonoBehaviour
 	public void Kill()
 	{
 		// kill Monster
+		m_Anim.SetBool("Dead", true);
+
+		// stun monster and then turn red, countdown to kill
 	}
 
 	public void Stun()
@@ -33,10 +37,16 @@ public class MonsterBehavior : MonoBehaviour
 	private void Start()
 	{
 		_player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+
+		m_Anim = GetComponent<Animator>();
 	}
 
 	private void Update()
 	{
+		if ( Input.GetKeyDown(KeyCode.U))
+		{
+			Kill();
+		}
 	}
 
 	private void FixedUpdate()
