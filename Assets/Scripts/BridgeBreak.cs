@@ -18,7 +18,6 @@ public class BridgeBreak : MonoBehaviour
 
 		if ( other.CompareTag("Player"))
 		{
-			Debug.Log( "Player Entered" );
 			_lightningStrike.SetActive(true);   // turn on lightning
 			_groundBlocks.SetActive(false);     // disable ground
 
@@ -42,7 +41,6 @@ public class BridgeBreak : MonoBehaviour
 		yield return new WaitForSeconds( 2f );
 
 		// Change Level
-		Debug.Log("Switching Scene");
 		if ( _transitionAfterFade ) 
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}

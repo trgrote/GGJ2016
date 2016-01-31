@@ -23,6 +23,5 @@ public class FadeOut : MonoBehaviour
 			yield return null;
 		}
 		sprite.color = blank_color;
-		Debug.Log("Fade Out Complete");
 	}
 }
