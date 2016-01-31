@@ -9,6 +9,5 @@ public static class KarmaValues
 	public static int Good;
 	public static int Evil;
 
-	public static int Apathy;
 	public static int Active;
 }
