@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour 
 {
@@ -30,5 +31,6 @@ public class PlayerDeath : MonoBehaviour
 	{
 		yield return new WaitForSeconds( time );
 		// Destroy( this.gameObject );
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 }

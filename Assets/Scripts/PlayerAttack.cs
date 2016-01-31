@@ -74,6 +74,8 @@ public class PlayerAttack : MonoBehaviour
 
 	void Attack()
 	{
+		anim.SetBool ("Attack", true);
+
 		// Attack in front of me
 		float direction = Mathf.Sign( transform.localScale.x );
 
