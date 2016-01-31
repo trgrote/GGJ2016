@@ -21458,6 +21458,26 @@ Prefab:
       propertyPath: _topics.Array.data[2]._options.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[2]._optionChosen.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 474226, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
       propertyPath: m_LocalPosition.x
       value: -592.08
@@ -21541,9 +21561,142 @@ Prefab:
       propertyPath: _topics.Array.data[1]._options.Array.data[0]._option
       value: You're so nice!
       objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._dialogue
+      value: 'Pilgrim, you must get to the mountain
+
+        to fulfill your priestly pilgrimage. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 629259734}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 629259733}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Active
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[2]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[2]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[2]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 629259734}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[2]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Civilzation
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[0]._options.Array.data[2]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 629259734}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Evil
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[0]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 629259734}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Nature
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498768, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: _topics.Array.data[2]._options.Array.data[1]._optionChosen.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146950, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146950, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: m_Offset.x
+      value: -0.049386453
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146950, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: m_Offset.y
+      value: 0.3533967
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146950, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: m_Size.y
+      value: 1.8794692
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146950, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+      propertyPath: m_Size.x
+      value: 1.3918438
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &629259733 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 126748, guid: c5b64fbf8b8897c489d364c3b6fecec7, type: 2}
+  m_PrefabInternal: {fileID: 629259732}
+--- !u!114 &629259734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 629259733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354325d1417b346d4a21ae56ea087265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &630693699
 Prefab:
   m_ObjectHideFlags: 0

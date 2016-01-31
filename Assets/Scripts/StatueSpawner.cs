@@ -42,9 +42,6 @@ public class StatueSpawner : MonoBehaviour
 			}
 		}
 
-		Debug.Log("Max is " + max );
-		Debug.Log("Min is " + min );
-
 		if ( min == KarmaTypes.Active )
 		{
 			// Special case for inactive players
