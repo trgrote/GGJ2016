@@ -23,4 +23,9 @@ public class KarmaModifiers : MonoBehaviour
 	{
 		KarmaValues.Active++;
 	}
+
+	public void ReduceActive()
+	{
+		KarmaValues.Active--;
+	}
 }
